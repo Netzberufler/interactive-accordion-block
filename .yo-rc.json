@@ -1,0 +1,33 @@
+{
+  "@inpsyde/generator-inpsyde": {
+    "basicPackageInfo": {
+      "type": "wordpress-plugin",
+      "vendor": "Netzberufler",
+      "client": "Interactive",
+      "name": "Accordion Block",
+      "description": "Accordion Block created with Interactivity API",
+      "version": "1.0",
+      "codeName": "interactive-accordion-block",
+      "codeNameWithVendor": "netzberufler/interactive-accordion-block",
+      "title": "Interactive Accordion Block",
+      "namespace": "Interactive\\AccordionBlock"
+    },
+    "licenseInfo": {
+      "licenseType": "gpl_2_0"
+    },
+    "wpPluginInfo": {
+      "composerRequirePhpVersions": ">=8.0",
+      "minPhpVersion": "8.0",
+      "network": false,
+      "updateUri": "https://github.com/Netzberufler/interactive-accordion-block",
+      "configurations": [
+        "workflow-release",
+        "assets-support",
+        "gitattributes-support"
+      ],
+      "phpVersions": [
+        "8.0"
+      ]
+    }
+  }
+}

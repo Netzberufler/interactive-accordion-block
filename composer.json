@@ -1,0 +1,65 @@
+{
+    "name": "netzberufler/interactive-accordion-block",
+    "type": "wordpress-plugin",
+    "description": "Accordion Block created with Interactivity API",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Inpsyde GmbH",
+            "email": "hello@inpsyde.com",
+            "homepage": "https://inpsyde.com/",
+            "role": "Company"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "inpsyde/assets": "^2.8",
+        "inpsyde/modularity": "@stable"
+    },
+    "require-dev": {
+        "inpsyde/php-coding-standards": "@stable",
+        "inpsyde/wp-stubs": "dev-main",
+        "johnpbloch/wordpress-core": "^6.4",
+        "phpunit/phpunit": "^9.6",
+        "vimeo/psalm": "^5.18"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "inpsyde/*": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Interactive\\AccordionBlock\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.packagist.com/inpsyde/"
+        },
+        {
+            "packagist.org": false
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "check-coding-standards": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs",
+        "fix-coding-standards": "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf",
+        "php-compat": "./vendor/bin/phpcs -p ./src --standard=PHPCompatibilityWP --extensions=php  --report-full=./php_compat --runtime-set testVersion 8.0",
+        "tests": "@php ./vendor/phpunit/phpunit/phpunit --coverage-text",
+        "tests:no-cov": "@php ./vendor/phpunit/phpunit/phpunit --no-coverage",
+        "check-psalm": "@php ./vendor/vimeo/psalm/psalm --output-format=compact",
+        "check-psalm:no-cache": "@php ./vendor/vimeo/psalm/psalm --output-format=compact --no-cache"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Interactive\\AccordionBlock\\Tests\\Unit\\": "tests/php/Unit/",
+            "Interactive\\AccordionBlock\\Tests\\Integration\\": "tests/php/Integration/"
+        }
+    }
+}

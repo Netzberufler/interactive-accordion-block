@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset>
+    <file>./src/</file>
+    <file>./interactive-accordion-block.php</file>
+    <file>./tests/</file>
+
+    <arg value="sp"/>
+    <arg name="colors"/>
+    <config name="testVersion" value="8.0-"/>
+    <config name="text_domain" value="interactive-accordion-block"/>
+    <config name="ignore_warnings_on_exit" value="1"/>
+
+    <rule ref="Inpsyde">
+    </rule>
+
+    <rule ref="Inpsyde.CodeQuality.Psr4">
+        <properties>
+            <property
+                    name="psr4"
+                    type="array"
+                    value="Interactive\AccordionBlock=>src,Interactive\AccordionBlock\Tests=>tests/php"
+            />
+        </properties>
+    </rule>
+
+    <exclude-pattern>*/vendor/*</exclude-pattern>
+</ruleset>

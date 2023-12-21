@@ -1,0 +1,28 @@
+{
+  "name": "interactive-accordion-block",
+  "description": "Accordion Block created with Interactivity API",
+  "version": "1.0",
+  "author": "Netzberufler",
+  "homepage": "https://github.com/netzberufler/interactive-accordion-block",
+  "keywords": [],
+  "license": "",
+  "private": true,
+  "scripts": {
+    "build": "wp-scripts build",
+    "build:dev": "wp-scripts build --mode development",
+    "start": "wp-scripts start",
+    "lint:md": "wp-scripts lint-md-docs *.md docs/**/*.md",
+    "lint:js": "wp-scripts lint-js resources/ts/**/*.{ts,tsx}",
+    "lint:style": "wp-scripts lint-style 'resources/scss/**/*.{css,scss}'"
+  },
+  "prettier": "@inpsyde/prettier-config",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "*",
+    "ts-loader": "*",
+    "typescript": "*",
+    "@inpsyde/prettier-config": "*"
+  }
+}

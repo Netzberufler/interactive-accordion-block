@@ -1,0 +1,38 @@
+## Composer
+composer.phar
+/vendor/
+
+## Assets folder
+/assets/
+
+## PHPUnit
+/.phpunit.result.cache
+/phpcs.xml
+/phpunit.xml
+
+# PHP compatibility checker
+/php_compat
+
+## npm
+/node_modules/
+.yarn-integrity
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+auth.json
+*.tgz
+
+## Logs
+*.log
+
+# TypeScript v1 declaration files
+typings/
+
+## Environment files
+.env
+
+# macOS-specific files
+.DS_Store
+
+## PhpStorm
+.idea/

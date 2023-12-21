@@ -1,0 +1,30 @@
+* text eol=lf
+
+composer.lock linguist-generated
+package-lock.json linguist-generated
+yarn.lock linguist-generated
+
+/assets/* linguist-generated
+/resources export-ignore
+/tests export-ignore
+
+/.eslintrc.js export-ignore
+/.gitattributes export-ignore
+/.github export-ignore
+/.gitignore export-ignore
+/.husky export-ignore
+/.psalm export-ignore
+/.yo-rc.json export-ignore
+/docs export-ignore
+/jest.config.js export-ignore
+/phpcs.xml.dist export-ignore
+/phpunit.xml.dist export-ignore
+/postcss.config.js export-ignore
+/psalm.xml export-ignore
+/tsconfig.json export-ignore
+/webpack.config.js export-ignore
+
+# general text files
+/README.md export-ignore
+/LICENSE export-ignore
+/CHANGELOG.md export-ignore
